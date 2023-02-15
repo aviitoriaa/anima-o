@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>engranagem</title>
     <style>
-        .minha_engrenagem
+        .minha_engrenagem1
         {
             position: absolute;
             top: 0px;
             left: 0px;
-            animation: engrena 1s infinite ease-out;
+            animation: engrena 5s infinite linear ;
         }
-        @keyframes engrena
+        .minha_engrenagem2
+        {
+            position: absolute ;
+            rotate: 0deg;
+            top: 120px;
+            left: 450px;
+            animation: engrena 5s infinite linear reverse;
+        }
+        @keyframes engrenagem
+        {
+            0%   { rotate: 0deg; }
+            
+            100% { rotate: 360deg;  }
+        }
+        @keyframes engrenagem
         {
             0%   { rotate: 0deg; }
             
@@ -24,6 +38,7 @@
     </style>
 </head>
 <body>
-    <img src="engrenagem.png" class="minha_engrenagem">
+    <img src="engrenagem.png" class="minha_engrenagem1">
+    <img src="engrenagem.png" class="minha_engrenagem2">
 </body>
 </html>
